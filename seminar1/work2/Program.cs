@@ -2,9 +2,16 @@
 int num = Convert.ToInt32(Console.ReadLine());
 
 int count = -num;
-
-while (count < num)
+if (num > 0)
 {
-    Console.Write(count + " ");
-    count++;
+    while (count < num)
+    {
+        Console.Write(count + " ");
+        count++;
+    }
+}
+else
+{
+    Console.WriteLine("Ошибка ввода! Введите целоположительное число!");
+
 }
